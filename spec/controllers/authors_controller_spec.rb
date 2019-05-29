@@ -9,7 +9,7 @@ RSpec.describe AuthorsController, type: :controller do
     it "assigns all authors as @authors" do
       author = Author.create! valid_attributes
       get :index, params: {}, session: valid_session
-      expect(assigns(:author)).to eq([author])
+      expect(assigns(:authors)).to eq([author])
     end
   end
 
